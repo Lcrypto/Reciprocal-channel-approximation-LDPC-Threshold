@@ -13,6 +13,6 @@ Punctured_VN =1; %Number of Punctured Nodes from 1st columns in protograph
 InfVNs=V-C; %Number of information variable nodes which consider in approximation
 %if it some cascade construction (check nodes important) should be set by hand
 Rate=(V-C)/(V-Punctured_VN) %Rate of code only for EB_No_result
-M=2; % Modulation 2 bpsk, 4 qpsk
+M=2; % Modulation 2 bpsk, 4 qpsk used only for EB_No_result
 snr_result = RCA_threshold(Protograph,Snr_start,Punctured_VN,InfVNs,iterations)
 EB_No_result= snr_result-10*log10(log2(M)*Rate)
